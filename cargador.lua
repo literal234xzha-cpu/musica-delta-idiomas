@@ -1,4 +1,4 @@
--- Delta Música · Cargador
+-- Ultra Music · Cargador
 -- 1) Detecta el idioma, 2) descarga (o reutiliza) su archivo de textos, 3) abre el reproductor.
 -- Los idiomas son archivos JSON (solo datos). Se guardan en DeltaMusica/Idiomas/ y funcionan sin internet después.
 --
@@ -17,7 +17,7 @@ local MAX_BYTES = 40000
 
 local req = request or http_request or (syn and syn.request)
 if not (writefile and readfile and isfile and makefolder and isfolder) then
-	warn("[Delta Música] Tu executor no soporta archivos")
+	warn("[Ultra Music] Tu executor no soporta archivos")
 	return
 end
 if not isfolder(RAIZ) then pcall(makefolder, RAIZ) end
@@ -124,12 +124,12 @@ if not codigo and isfile(REPRODUCTOR_LOCAL) then
 	if ok and type(t) == "string" then codigo = t end
 end
 if not codigo then
-	warn("[Delta Música] No encuentro el reproductor. Pon su enlace en REPRODUCTOR_URL o guárdalo como " .. REPRODUCTOR_LOCAL)
+	warn("[Ultra Music] No encuentro el reproductor. Pon su enlace en REPRODUCTOR_URL o guárdalo como " .. REPRODUCTOR_LOCAL)
 	return
 end
 local fn, err = loadstring(codigo)
 if not fn then
-	warn("[Delta Música] El reproductor no compila: " .. tostring(err))
+	warn("[Ultra Music] El reproductor no compila: " .. tostring(err))
 	return
 end
 fn()

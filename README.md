@@ -1,6 +1,6 @@
 # musica-delta-idiomas
 
-Idiomas y cargador de **Delta Música**.
+Idiomas y cargador de **Ultra Music**.
 
 - `idiomas.json`: lista de idiomas y su versión.
 - `es.json`, `en.json`, `zh.json`, `fr.json`: textos de cada idioma. **Solo datos JSON, nunca código.**
