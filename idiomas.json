@@ -1,0 +1,29 @@
+{
+ "version": 1,
+ "idiomas": [
+  {
+   "codigo": "es",
+   "nombre": "Español",
+   "version": 1,
+   "archivo": "es.json"
+  },
+  {
+   "codigo": "en",
+   "nombre": "English",
+   "version": 1,
+   "archivo": "en.json"
+  },
+  {
+   "codigo": "zh",
+   "nombre": "中文（简体）",
+   "version": 1,
+   "archivo": "zh.json"
+  },
+  {
+   "codigo": "fr",
+   "nombre": "Français",
+   "version": 1,
+   "archivo": "fr.json"
+  }
+ ]
+}
